@@ -6,17 +6,39 @@
         <link rel="stylesheet" type="text/css"
         href="file.css" />
         <title>Peppa On Patrol</title>
-
+        <h1 style="color: blueviolet; font-size:60px;">Peppa on Patrol</h1>
+        <div class="topnav">
+            <a class="active" href="#Home">Home</a>
+            <a href="#peppa">About Peppa</a>
+            <a href="#canberra">Canberra</a>
+            <a href="#tidbinbilla">Tidbinbilla</a>
+        </div>
     </head>
 
     <body>
-        <h3 style="color: rgb(255, 1, 242); font-size: 18px;">Hello There</h3>
         <h1>Hello There</h1>
-        <h2>Hello There</h2>
+
         <p>Hello  this is some good stuff right here</p>
 
+        <!-- show the locations Peppa visited -->
         <div id="map" style="width:400px;height:300px">Map Here</div>
-        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+        <script>
+        function myMap() {
+            var mapProp = {
+                center:new google.maps.latlng(51.5, -0.12),
+                zoom: 10,
+                // mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+        var map=new google.maps.Map(document.getElementById("googlemap"), mapProp);
+        // var marker=new google.maps.Marker({position:myCenter});
+        // var marker=new google.maps.Marker({position:myCenter});
+        // var marker=new google.maps.Marker({position:myCenter});
+        }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRDS9kr6rwE2ATBEA1ZPgPNkvilf9YKS8&callback=myMap" type="text/javascript"></script>
+        <!-- map end-->
+
+
     </body>
 
 </html>
