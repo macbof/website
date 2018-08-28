@@ -1,12 +1,11 @@
 <!doctype html>
-<!-- This is a comment -->
+
 <html>
 
     <head>
-        <link rel="stylesheet" type="text/css"
-        href="file.css" />
+        <link rel="stylesheet" type="text/css" href="file.css" />
         <title>Peppa On Patrol</title>
-        <h1 style="color: blueviolet; font-size:60px;">Peppa on Patrol</h1>
+        <h1 align="center" style="color: rgb(0, 158, 250); font-size:60px;">Peppa on Patrol</h1>
         <div class="topnav">
             <a class="active" href="#Home">Home</a>
             <a href="#peppa">About Peppa</a>
@@ -18,28 +17,74 @@
     <body>
         <h1>Hello There</h1>
 
-        <p>Hello  this is some good stuff right here</p>
+        <p>Hello  this is some Woof stuff right here</p>
 
-        <!-- show the locations Peppa visited -->
-        <div id="map" style="width:400px;height:300px">Map Here</div>
+        <img id="myImg" src="tidbinbilla.jpg" alt="Tidbinbilla" style="width:100%;max-width:300px">
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        
+
+    
+        <div class="row">
+            <div class="column">
+                <img src="tidbinbilla.jpg" alt="Snow">
+
+            </div>
+            <div class="column">
+                <img src="tidbinbilla.jpg" alt="Forest">
+            </div>
+            <div class="column">
+                <img src="tidbinbilla.jpg" alt="Mountains">
+            </div>
+            <div class="column">
+                <img src="tidbinbilla.jpg" alt="Mountains">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="tidbinbilla.jpg" alt="Snow">
+            </div>
+            <div class="column">
+                <img src="tidbinbilla.jpg" alt="Forest">
+            </div>
+            <div class="column">
+                <img src="tidbinbilla.jpg" alt="Mountains">
+            </div>
+            <div class="column">
+                <img src="tidbinbilla.jpg" alt="Mountains">
+            </div>
+        </div>
+        
         <script>
-        function myMap() {
-            var mapProp = {
-                center:new google.maps.latlng(51.5, -0.12),
-                zoom: 10,
-                // mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-        var map=new google.maps.Map(document.getElementById("googlemap"), mapProp);
-        // var marker=new google.maps.Marker({position:myCenter});
-        // var marker=new google.maps.Marker({position:myCenter});
-        // var marker=new google.maps.Marker({position:myCenter});
-        }
+                // Get the modal
+                var modal = document.getElementById('myModal');
+                
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById('myImg');
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                img.onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+                
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() { 
+                    modal.style.display = "none";
+                }
         </script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRDS9kr6rwE2ATBEA1ZPgPNkvilf9YKS8&callback=myMap" type="text/javascript"></script>
-        <!-- map end-->
 
+        <br><br>
+
+        <iframe src="https://www.google.com/maps/d/embed?mid=10r2m058rt34rrGkNConRkzkeavya9e9w" ></iframe>
 
     </body>
 
 </html>
-
