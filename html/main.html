@@ -1,0 +1,126 @@
+<!doctype html>
+
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="file.css" />
+        <title>Peppa On Patrol</title>
+        <h1 align="center" style="color: rgb(0, 158, 250); font-size:60px;">Peppa on Patrol</h1>
+        <div class="topnav">
+            <a class="active" href="main.html">Home</a>
+            <a href="aboutpep.html">About Peppa</a>
+            <a href="issac.html">Issac</a>
+            <a href="tidbinbilla.html">Tidbinbilla</a>
+        </div>
+    </head>
+
+    <body>
+        <h1>Hello There</h1>
+
+        <p>Hello  this is some Woof stuff right here</p>
+        <br><br>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      
+        <div class="row">
+            <div class="column">
+                <img class="myImg" src="../pics/tidbinbilla.jpg" alt="Tidbinbilla">
+                <div id="myModal" class="modal">
+                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="column">
+                <img class="myImg" src="../pics/tidbinbilla.jpg" alt="Tidbinbilla">
+                <div id="myModal" class="modal">
+                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="column">
+                <img class="myImg" src="../pics/tidbinbilla.jpg" alt="Tidbinbilla">
+                <div id="myModal" class="modal">
+                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="column">
+                <img class="myImg" src="../pics/tidbinbilla.jpg" alt="Tidbinbilla">
+                <div id="myModal" class="modal">
+                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img class="myImg" src="../pics/tidbinbilla.jpg" alt="Tidbinbilla">
+                <div id="myModal" class="modal">
+                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="column">
+                <img class="myImg" src="../pics/tidbinbilla.jpg" alt="Tidbinbilla">
+                <div id="myModal" class="modal">
+                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="column">
+                <img class="myImg" src="../pics/tidbinbilla.jpg" alt="Tidbinbilla">
+                <div id="myModal" class="modal">
+                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="column">
+                <img class="myImg" src="../pics/tidbinbilla.jpg" alt="Tidbinbilla">
+                <div id="myModal" class="modal">
+                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+                // Get the modal
+                var modal = document.getElementById('myModal');
+                
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = $('.myImg');
+                var modalImg = $("#img01");
+                var captionText = document.getElementById("caption");
+                $('.myImg').click(function(){
+                    modal.style.display = "block";
+                    var newSrc = this.src;
+                    modalImg.attr('src', newSrc);
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                });
+                
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() { 
+                    modal.style.display = "none";
+                }
+        </script>
+
+        <br><br>
+        <br><br>
+
+        <iframe src="https://www.google.com/maps/d/embed?mid=10r2m058rt34rrGkNConRkzkeavya9e9w" ></iframe>
+
+    </body>
+
+</html>
