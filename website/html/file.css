@@ -1,0 +1,189 @@
+head {
+    display: block;
+    margin: auto;
+    padding: auto;
+}
+
+.topnav {
+    background-color: rgb(92, 88, 88);
+    overflow: hidden;
+    margin: auto;
+}
+.topnav a {
+    float: left;
+    color: rgb(207, 27, 27);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17ps;
+}
+.topnav a:hover {
+    background-color: rgb(75, 71, 71);
+    color: rgb(180, 14, 14);
+}
+.topnav a.active {
+    background-color: rgb(75, 71, 71);
+    color: rgb(180, 14, 14);
+}
+
+body {
+    background-color:rgb(92, 88, 88);
+    width: 1100px;
+    height: 1500px;
+    margin: auto;
+    padding:10px;
+    /* border-style: solid; 
+    border-width: 1px red; */
+}
+/* Column's for the modal pictures  */
+.column {
+    float: right;
+    width: 24%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    width: 70%;
+  }
+
+/* Styling for Modal on main page */
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.myImg:hover {opacity: 0.7;}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    cursor: pointer;
+  }
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media only screen and (max-wdith: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+iframe {
+    width: 1100px;
+    height: 600px;
+    margin: auto;
+}
+
+iframe[seamless] {
+    display: block;
+}
+
+/* CSS for Contact Peppa form page */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+input[type=submit] {
+    background-color: rgb(170, 168, 168);
+    color: rgb(253, 253, 253);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.form {
+    border-radius: 5px;
+    background-color: #968b8b;
+    padding: 20px;
+}
+
+/* About peppa page */
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    padding: 10px;
+}
+
+aside {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 2;
+    padding: 10px;
+}
