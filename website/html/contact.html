@@ -1,42 +1,44 @@
 <!doctype html>
 
-<html>
+<html lang="en">
 
-    <head>
-        <link rel="stylesheet" type="text/css" href="file.css" />
-        <title>Peppa On Patrol</title>
-        <h1 align="center" style="color: rgb(0, 158, 250); font-size:60px;">Peppa on Patrol</h1>
-        <div class="topnav">
-            <a class="active" href="main.html">Home</a>
-            <a href="aboutpep.html">About Peppa</a>
-            <a href="contact.html">Contact Peppa</a> 
-            <a href="issac.html">Issac</a>
-            <a href="tidbinbilla.html">Tidbinbilla</a>
-        </div>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="file.css" />
+    <title>Peppa On Patrol</title>
+    <h1 id="title" style="color: rgb(0, 158, 250); font-size:60px;">Peppa on Patrol</h1>
+    <div class="topnav">
+        <a class="active" href="main.html">Home</a>
+        <a href="aboutpep.html">About Peppa</a>
+        <a href="contact.html">Contact Peppa</a>
+        <a href="issac.html">Issac</a>
+        <a href="tidbinbilla.html">Tidbinbilla</a>
+    </div>
+</head>
 
-    <body>
-        <h1>Contact Peppa</h1>
-        <div class="form">
-            <form action="action_page">
+<body>
+    <h1>Contact Peppa</h1>
+    <div id="form">
+        <form action="action_page">
 
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name here">
-                
-                <label for="ad">Address</label>
-                <input type="text" id="lname" name="address" placeholder="Your address here">
+            <label for="name">First Name</label>
+            <input type="text" id="name" name="firstname" placeholder="Your name here">
 
-                <label for="ph">Phone Number</label>
-                <input type="text" id="phone" name="phone" placeholder="Your phone number here">
+            <label for="ad">Address</label>
+            <input type="text" id="ad" name="address" placeholder="Your address here">
 
-                <label for="em">Email</label>
-                <input type="text" id="lname" name="email" placeholder="Your email here">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Your phone number here">
 
-                <label for="subject">Query</label>
-                <textarea id="subject" name="subject" placeholder="What's up?!" style="height:200px"></textarea>
-                <input type="submit" value="Submit">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email here">
 
-            </form>
-                
-        </div>
-    </body>
+            <label for="subject">Query</label>
+            <textarea id="subject" name="subject" placeholder="What's up?!" style="height:200px"></textarea>
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,131 +1,135 @@
 <!doctype html>
 
 
-<html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="file.css"  />
-        <link rel="icon" href="pictures/icon.jpg">
-        <title>Peppa On Patrol</title>
-        <h1 align="center" style="color: rgb(0, 158, 250); font-size:60px;">Peppa on Patrol</h1>
-            <div class="topnav">
-                <a class="active" href="main.html">Home</a>
-                <a href="aboutpep.html">About Peppa</a>
-                <a href="contact.html">Contact Peppa</a> 
-                <a href="issac.html">Issac</a>
-                <a href="tidbinbilla.html">Tidbinbilla</a>
-            </div>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="file.css" />
+    <link rel="icon" href="pictures/icon.jpg">
+    <title>Peppa On Patrol</title>
+    <h1 id="title" style="color: rgb(0, 158, 250); font-size:60px;">Peppa on Patrol</h1>
+    <div class="topnav">
+        <a class="active" href="main.html">Home</a>
+        <a href="aboutpep.html">About Peppa</a>
+        <a href="contact.html">Contact Peppa</a>
+        <a href="issac.html">Issac</a>
+        <a href="tidbinbilla.html">Tidbinbilla</a>
+    </div>
+</head>
 
-    <body>
-        <h1>Hello There</h1>
+<body>
+    <h1>Hello There</h1>
 
-        <p>Hello  this is some Woof stuff right here</p>
-        <br><br>
-        <!-- Begin modal code -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <!-- Create rows and columns for the modal images -->
+    <p>Hello this is some Woof stuff right here</p>
+    <br><br>
+    <!-- Begin modal code -->
+
+
+
+    <!-- Container for the image gallery -->
+    <div class="container">
+
+        <!-- Full-width images with number text -->
+        <div class="slides">
+            <div class="numbertext">1 / 6</div>
+            <img src="pictures/tidbinbilla/tidbinbilla-mountain.jpg" style="width:100%" alt="1">
+        </div>
+
+        <div class="slides">
+            <div class="numbertext">2 / 6</div>
+            <img src="pictures/tidbinbilla/tidbinbilla-valley.jpg" style="width:100%" alt="2"> 
+        </div>
+
+        <div class="slides">
+            <div class="numbertext">3 / 6</div>
+            <img src="pictures/isaac/entry.jpg" style="width:100%" alt="3">
+        </div>
+
+        <div class="slides">
+            <div class="numbertext">4 / 6</div>
+            <img src="pictures/tidbinbilla/tidbinbilla-valley.jpg" style="width:100%" alt="4">
+        </div>
+
+        <div class="slides">
+            <div class="numbertext">5 / 6</div>
+            <img src="pictures/tidbinbilla/tidbinbilla-valley.jpg" style="width:100%" alt="5">
+        </div>
+
+        <div class="slides">
+            <div class="numbertext">6 / 6</div>
+            <img src="pictures/tidbinbilla/tidbinbilla-valley.jpg" style="width:100%" alt="6">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- text under full image -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail images -->
         <div class="row">
             <div class="column">
-                <img class="myImg" src="pictures/tidbinbilla.jpg" alt="Tidbinbilla">
-                <div id="myModal" class="modal">
-                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption"></div>
-                </div>
+                <img class="lemo cursor" src="pictures/tidbinbilla/tidbinbilla-mountain.jpg" style="width:100%" onclick="currentSlide(1)"
+                    alt="Yas Queen">
             </div>
             <div class="column">
-                <img class="myImg" src="pictures/tidbinbilla.jpg" alt="Tidbinbilla">
-                <div id="myModal" class="modal">
-                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption"></div>
-                </div>
+                <img class="lemo cursor" src="pictures/tidbinbilla/tidbinbilla-valley.jpg" style="width:100%" onclick="currentSlide(2)"
+                    alt=" 2">
             </div>
             <div class="column">
-                <img class="myImg" src="pictures/tidbinbilla.jpg" alt="Tidbinbilla">
-                <div id="myModal" class="modal">
-                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption"></div>
-                </div>
+                <img class="lemo cursor" src="pictures/isaac/entry.jpg" style="width:100%" onclick="currentSlide(3)"
+                    alt=" and ">
             </div>
             <div class="column">
-                <img class="myImg" src="pictures/tidbinbilla.jpg" alt="Tidbinbilla">
-                <div id="myModal" class="modal">
-                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption"></div>
-                </div>
+                <img class="lemo cursor" src="pictures/tidbinbilla/tidbinbilla-valley.jpg" style="width:100%" onclick="currentSlide(4)"
+                    alt=" 3">
+            </div>
+            <div class="column">
+                <img class="lemo cursor" src="pictures/tidbinbilla/tidbinbilla-valley.jpg" style="width:100%" onclick="currentSlide(5)"
+                    alt=" and ">
+            </div>
+            <div class="column">
+                <img class="lemo cursor" src="pictures/tidbinbilla/tidbinbilla-valley.jpg" style="width:100%" onclick="currentSlide(6)"
+                    alt=" 6">
             </div>
         </div>
-        <div class="row">
-            <div class="column">
-                <img class="myImg" src=".pictures/tidbinbilla.jpg" alt="Tidbinbilla">
-                <div id="myModal" class="modal">
-                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption"></div>
-                </div>
-            </div>
-            <div class="column">
-                <img class="myImg" src="pictures/tidbinbilla.jpg" alt="Tidbinbilla">
-                <div id="myModal" class="modal">
-                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption"></div>
-                </div>
-            </div>
-            <div class="column">
-                <img class="myImg" src="pictures/tidbinbilla.jpg" alt="Tidbinbilla">
-                <div id="myModal" class="modal">
-                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption"></div>
-                </div>
-            </div>
-            <div class="column">
-                <img class="myImg" src="pictures/tidbinbilla.jpg" alt="Tidbinbilla">
-                <div id="myModal" class="modal">
-                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption"></div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- enlarge images on page when clicked on -->
-        <script>
-                // Get the modal
-                var modal = document.getElementById('myModal');
-                
-                // Get the image and insert it inside the modal - use its "alt" text as a caption
-                var img = $('.myImg');
-                var modalImg = $("#img01");
-                var captionText = document.getElementById("caption");
-                $('.myImg').click(function(){
-                    modal.style.display = "block";
-                    var newSrc = this.src;
-                    modalImg.attr('src', newSrc);
-                    modalImg.src = this.src;
-                    captionText.innerHTML = this.alt;
-                });
-                
-                // Get the <span> element that closes the modal
-                var span = document.getElementsByClassName("close")[0];
-                
-                // Close image
-                span.onclick = function() { 
-                    modal.style.display = "none";
-                }
-        </script>
+    </div>
+    <!------- Java script for gallery ------->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
 
-        <br><br>
-        <br><br>
-        <!-- Google maps saved places -->
-        <iframe src="https://www.google.com/maps/d/embed?mid=10r2m058rt34rrGkNConRkzkeavya9e9w" ></iframe>
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
 
-    </body>
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slides");
+            var dots = document.getElementsByClassName("lemo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+    <iframe id="maps" src="https://www.google.com/maps/d/embed?mid=10r2m058rt34rrGkNConRkzkeavya9e9w"></iframe>
+</body>
 
 </html>
