@@ -82,12 +82,18 @@ input[type=submit]:hover {
 
 /* Add a background color and some padding around the form */
 #form {
+    float: left;
     border-radius: 5px;
     background-color: #968b8b;
     padding: 20px;
+    width: 73%;
 }
 
-/* About peppa page */
+#pephead {
+    float: right;
+    height: 20%;
+}
+/*----------------- About peppa page -------------- */
 section {
     display: -webkit-flex;
     display: flex;
@@ -105,6 +111,8 @@ aside {
     flex: 2;
     padding: 10px;
 }
+
+
 
 /*---------------- Image gallery ------------------*/
 * {
