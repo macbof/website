@@ -23,8 +23,6 @@
 
     <p>Hello this is some Woof stuff right here</p>
     <br><br>
-    <!-- Begin modal code -->
-
 
 
     <!-- Container for the image gallery -->
@@ -65,11 +63,6 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-        <!-- text under full image -->
-        <div class="caption-container">
-            <p id="caption"></p>
-        </div>
-
         <!-- Thumbnail images -->
         <div class="row">
             <div class="column">
@@ -82,15 +75,15 @@
             </div>
             <div class="column">
                 <img class="lemo cursor" src="pictures/isaac/entry.jpg" style="width:100%" onclick="currentSlide(3)"
-                    alt=" and ">
+                    alt=" 3 ">
             </div>
             <div class="column">
                 <img class="lemo cursor" src="pictures/tidbinbilla/tidbinbilla-valley.jpg" style="width:100%" onclick="currentSlide(4)"
-                    alt=" 3">
+                    alt=" 4">
             </div>
             <div class="column">
                 <img class="lemo cursor" src="pictures/tidbinbilla/tidbinbilla-valley.jpg" style="width:100%" onclick="currentSlide(5)"
-                    alt=" and ">
+                    alt=" 5 ">
             </div>
             <div class="column">
                 <img class="lemo cursor" src="pictures/tidbinbilla/tidbinbilla-valley.jpg" style="width:100%" onclick="currentSlide(6)"
@@ -129,7 +122,11 @@
             captionText.innerHTML = dots[slideIndex - 1].alt;
         }
     </script>
+        <br>
+        <br>
+    <section>
     <iframe id="maps" src="https://www.google.com/maps/d/embed?mid=10r2m058rt34rrGkNConRkzkeavya9e9w"></iframe>
+    </section>
 </body>
 
 </html>

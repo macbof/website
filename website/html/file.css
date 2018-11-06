@@ -91,7 +91,12 @@ input[type=submit]:hover {
 
 #pephead {
     float: right;
-    height: 20%;
+    height: 19%;
+}
+
+#sleepy {
+    float: right;
+    height: 19%;
 }
 /*----------------- About peppa page -------------- */
 section {
@@ -171,16 +176,7 @@ aside {
     position: absolute;
     top: 0;
   }
-  
-  /* Container for image text */
-  .caption-container {
-    height: 50px;
-    text-align: center;
-    background-color: #222;
-    padding: 3px 15px;
-    color: white;
-  }
-  
+
   .row:after {
     content: "";
     display: table;
@@ -193,7 +189,7 @@ aside {
     width: 16.66%;
   }
   
-  /* Add a transparency effect for thumnbail images */
+
   .lemo {
     opacity: 0.6;
   }
