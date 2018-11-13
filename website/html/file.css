@@ -38,11 +38,20 @@ body {
     height: 1500px;
     margin: auto;
     padding:10px;
-    /* border-style: solid; 
-    border-width: 1px red; */
+
 }
 
+footer {
+    background-color:rgb(92, 88, 88);
+    width: 1080px;
+    height: 100px;
+    margin: auto;
+    position: fixed;
+    bottom: 0;
 
+
+
+}
 /* ---------------------- Maps -------------------------- */
 #maps {
     width: 1100px;
